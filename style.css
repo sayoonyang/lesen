@@ -1,0 +1,122 @@
+/*CSS for Semester project "Lesen".
+Sayoon Yang, Lilian Walters. */
+
+/** Table of Contents
+
+* 1.0 Normalize
+* 2.0 Elements
+* 3.0 Modal
+* 4.0 Navbar
+* 5.0 Container(gif)
+* 6.0 Responsive
+*/
+
+
+/**
+* 1.0 Normalize
+*/
+
+
+body {
+  padding-top : 10em;
+  padding-bottom : 5em;
+  font-family: 'Oxygen', sans-serif;
+  border : solid 5px #000;
+  background-color: #fff;
+}
+
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size : 1em;
+}
+
+/**
+* 2.0 Elements
+*/
+
+
+.btn {
+  background-color: #fff;
+  border : 5px solid #000;
+  font-size : 1.3em;
+}
+
+/**
+* 3.0 Modal
+*/
+
+
+.modal-header{
+  background-color : #FFE66D;
+  border : none;
+}
+
+.modal-content{
+  border : 5px solid #000;
+  background-color : #fff;
+  font-family: 'Oxygen', sans-serif;
+  text-align :center;
+  height : 150%;
+}
+
+.modal-title{
+  font-size : 4em;
+}
+
+/**
+* 4.0 Navbar
+*/
+
+
+.navbar {
+  border: solid 5px #000;
+  background-color : #FFE66D;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+  color: #000;
+  font-size: 1.5em;
+}
+
+.navbar-toggler {
+  border : none;
+}
+
+/**
+* 5.0 Container(gif)
+*/
+
+
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0px;
+}
+
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+/**
+* 6.0 Responsive
+*/
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+
+  .grid-container {
+    display: block;
+  }
+}
