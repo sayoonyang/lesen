@@ -173,9 +173,6 @@ a {
 @media only screen and (max-width: 767px) {
   body {
   }
-  .navbar-brand{
-    height : 30px;
-  }
 
   .grid-container {
     display: block;
