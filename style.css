@@ -86,6 +86,9 @@ a {
   border-left: 65px solid transparent;
 }
 
+
+
+
 .form-group{
   padding : 1em;
 }
@@ -166,13 +169,43 @@ a {
 
 
 .player{
-  margin : auto;
-  text-align : center;
+  display: flex;
+  justify-content : center;
+}
+
+
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    border : 5px solid #000;
+}
+
+.recording-Container{
+  display : block;
 }
 
 #recordingsList{
   list-style : none;
+  justify-content : center;
 }
+
+#recordingConfirm{
+  display: flex;
+  justify-content : center;
+}
+
+.recording-li {
+  padding : 2em;
+  border: none;
+  display: flex; /* allows align-items to work below */
+  justify-content: center; /* Horizontally centers single-line elements */
+}
+
 
 /**
 * 6.0 Responsive

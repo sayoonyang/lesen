@@ -136,7 +136,7 @@ function stopRecording() {
 	stopButton.disabled = true;
 	recordButton.disabled = false;
 	pauseButton.disabled = true;
-  recordButton.style.display = 'block';
+  recordButton.style.display = 'none';
   stopButton.style.display = 'none';
   pauseButton.style.display = 'none';
 
@@ -156,10 +156,19 @@ function createDownloadLink(blob) {
 	var au = document.createElement('audio');
 	var li = document.createElement('li');
 	var link = document.createElement('a');
+  var btn = document.createElement('button');
 
 	//add controls to the <audio> element
 	au.controls = true;
 	au.src = url;
+
+
+  //add contents to the <button> element
+btn.setAttribute("class", "btn");
+  btn.innerHTML = "Weiter";
+
+  //add new music list
+  li.setAttribute("class", "recording-li");
 
 	//link the a element to the blob
 	link.href = url;
@@ -173,6 +182,8 @@ function createDownloadLink(blob) {
 	li.appendChild(au);
 	//li.appendChild(link);//
 
+
 	//add the li element to the ordered list
 	recordingsList.appendChild(li);
+  recordingConfirm.appendChild(btn);
 }

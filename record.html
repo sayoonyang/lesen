@@ -49,25 +49,40 @@
       <div class="container">
 
       <div class="dialogbox">
-        <h1 class="display-4">Aufnehmen</h1>
 
-        <div class="player" style="max-width: 28em;">
+        <h1 class="display-4">Aufnehmen</h1>
+        <p></p>
+
+        <div class="player">
 
           <div id="formats"></div>
+          <div class="recording-container">
+              <ul id="recordingsList"></ul>
+              <div id="recordingConfirm"></div>
+          </div>
 
-
-          <ul id="recordingsList"></ul>
 
           <div id="controls">
-             <button class="btn" id="recordButton"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+             <button type="button" id="recordButton" class="btn-danger btn-circle btn-xl"><i class="fa fa-microphone" aria-hidden="true"></i>
+                            </button>
 
-             <button class="btn" id="pauseButton" disabled><i class="fa fa-pause" aria-hidden="true"></i></button>
+             <button type="button" id="pauseButton" disabled class="btn-info btn-circle btn-xl"><i class="fa fa-pause" aria-hidden="true"></i>
+                            </button>
 
-             <button class="btn" id="stopButton" disabled><i class="fa fa-stop" aria-hidden="true"></i></button>
+             <button type="button" id="stopButton" disabled class="btn-info btn-circle btn-xl"><i class="fa fa-stop" aria-hidden="true"></i>
+                            </button>
           </div>
 
 
         </div>
+
+        <p></p>
+        <hr>
+        <div class="alert alert-light" role="alert">
+          <h4 class="alert-heading">Bist du bereit?</h4>
+          <p>Beim clicken die Button, kannst du die Aufnahme anfangen oder beenden. Nach der Aufnahme kannst du deine Empfehlung anhören.</p>
+        </div>
+
         </div>
 
         </div>
