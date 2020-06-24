@@ -31,10 +31,68 @@ p {
   font-size : 1em;
 }
 
+input[type=email] {
+  border: none;
+  border-bottom: 5px solid #000;
+}
+
+input[type=email]:focus {
+  border: none;
+  border-bottom: 5px solid #000;
+  background-color : #FFE66D;
+}
+
+a {
+  color : #4ECDC4;
+}
+
 /**
 * 2.0 Elements
 */
 
+
+
+.dialogbox{
+  padding : 2em;
+  width : 70%;
+  margin : auto;
+  position: relative;
+  background:linear-gradient(to bottom,#000 50%,transparent 0) 0 0/calc(100% - 20px) 10px no-repeat,
+  linear-gradient(to bottom,transparent 50%,#000 0) 0 100%/100% 10px no-repeat,
+  linear-gradient(to right,#000 50%,transparent 0) 0 0/10px 100% no-repeat,
+  linear-gradient(to right,transparent 50%,#000 0) 100% 20px/10px 100% no-repeat,
+  linear-gradient(to top right,transparent 50%,#000 50%,#000 calc(50% + 1px),transparent calc(50% + 2px)) 100% 0/20px 20px no-repeat;
+}
+
+.dialogbox:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 65px solid #FFE66D;
+  border-right: 65px solid transparent;
+}
+
+.dialogbox:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 65px solid #FFF;
+  border-left: 65px solid transparent;
+}
+
+.form-group{
+  padding : 1em;
+}
+
+.text-center{
+  padding : 1em;
+}
 
 .btn {
   background-color: #fff;
