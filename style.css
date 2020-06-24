@@ -164,6 +164,16 @@ a {
   opacity:0;
 }
 
+
+.player{
+  margin : auto;
+  text-align : center;
+}
+
+#recordingsList{
+  list-style : none;
+}
+
 /**
 * 6.0 Responsive
 */
