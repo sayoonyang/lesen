@@ -57,11 +57,41 @@ a {
   color : #4ECDC4;
 }
 
+a:hover{
+  text-decoration : none;
+}
+
 /**
 * 2.0 Elements
 */
 
+.btn {
+  background-color: #fff;
+  border : 5px solid #000;
+  font-size : 1.3em;
+}
 
+.card-group{
+  margin-top : 2em;
+}
+
+.card.book{
+  border : none;
+}
+
+.card-body.cover{
+  border : 5px solid #000;
+  margin : 1em;
+}
+
+.col.right{
+  border-left : 5px solid #000;
+}
+
+.display-4.title{
+  text-transform: uppercase;
+  margin-bottom : 2em;
+}
 
 .dialogbox{
   padding : 2em;
@@ -97,21 +127,13 @@ a {
   border-left: 65px solid transparent;
 }
 
-
-
-
 .form-group{
   padding : 1em;
 }
 
+
 .text-center{
   padding : 1em;
-}
-
-.btn {
-  background-color: #fff;
-  border : 5px solid #000;
-  font-size : 1.3em;
 }
 
 /**
@@ -154,6 +176,14 @@ a {
 
 .navbar-toggler {
   border : none;
+}
+
+.page-link.left{
+  text-align : left;
+}
+
+.page-link.right{
+  text-align : right;
 }
 
 /**
