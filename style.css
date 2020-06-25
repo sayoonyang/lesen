@@ -31,12 +31,23 @@ p {
   font-size : 1em;
 }
 
-input[type=email] {
+input[type=email]{
   border: none;
   border-bottom: 5px solid #000;
 }
 
 input[type=email]:focus {
+  border: none;
+  border-bottom: 5px solid #000;
+  background-color : #FFE66D;
+}
+
+input[type=password]{
+  border: none;
+  border-bottom: 5px solid #000;
+}
+
+input[type=password]:focus {
   border: none;
   border-bottom: 5px solid #000;
   background-color : #FFE66D;
@@ -185,6 +196,8 @@ a {
     border : 5px solid #000;
 }
 
+
+
 .recording-Container{
   display : block;
 }
@@ -205,6 +218,45 @@ a {
   display: flex; /* allows align-items to work below */
   justify-content: center; /* Horizontally centers single-line elements */
 }
+
+#controls{
+  margin : 3em 0 3em 0;
+}
+
+#recordButton{
+  animation: shadow-pulse-big 1s 1;
+}
+
+#stopButton{
+  animation: shadow-pulse 1s infinite;
+}
+
+
+.wrapper
+{
+  padding: 20px;
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
 
 
 /**
