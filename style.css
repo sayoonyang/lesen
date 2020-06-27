@@ -8,7 +8,8 @@ Sayoon Yang, Lilian Walters. */
 * 3.0 Modal
 * 4.0 Navbar
 * 5.0 Container(gif)
-* 6.0 Responsive
+* 6.0 Audioplayer
+* 7.0 Responsive
 */
 
 
@@ -134,6 +135,10 @@ a:hover{
 
 .text-center{
   padding : 1em;
+}
+
+.profile-photo{
+  border-radius: 50%;
 }
 
 /**
@@ -288,9 +293,76 @@ a:hover{
 }
 
 
+/**
+* 7.0 audioPlayer
+*/
+
+.audio-author{
+  position : absolute;
+  bottom : -2%;
+  right : 5%;
+  text-align : right;
+}
+
+.audio-cover{
+  text-align : center;
+}
+
+.audio-player {
+  width: 70%;
+  position : absolute;
+  top : 63%;
+  left: 5%;
+  z-index : 1;
+}
+.audio-player i {
+  font-size: 5rem;
+  display : inline-block;
+}
+
+.material-icons {
+  color : #FFE66D;
+}
+
+.list-group-item{
+  visibility: hidden;
+}
+
+.audio-progress{
+  width : 70%;
+  position : absolute;
+  top : 61%;
+  left : 24.5%;
+  margin-top : 85px;
+}
+
+.progress {
+  overflow: visible;
+}
+
+.progress-bar{
+  background-color : #000;
+}
+
+li.active:before {
+  font-family: "Material Icons";
+  content: "\e037";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.ui-slider-handle {
+  border-radius: 50%;
+
+}
+
+
+
 
 /**
-* 6.0 Responsive
+* 7.0 Responsive
 */
 
 

@@ -8,6 +8,13 @@
     <!--media viewport-->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+    <!--google material-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+    <!--jquery for Audioplayer-->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+
     <!--embedded styles-->
 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -22,6 +29,14 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- for animation -->
+
+    <script>
+      $("img", "#gifs-rows").hover(function() {
+      $('.preset-file').toggle();
+      $('.gif-file').toggle();
+    });
+    </script>
 
   </head>
 
@@ -47,14 +62,44 @@
       <div class="container">
 
       <div class="dialogbox">
+
+
         <div class="row">
           <div class="col">
-            <h1 class="display-4 title">Lorem ipsum dolor sit amet</h1>
+            <h1 class="display-4 title">Uorem ipsum dolor sit amet</h1>
 
             <h4>von</h4>
             <h3>consectetur adipiscing</h3>
           </div>
           <div class="col right">
+
+
+          <div class="audio-cover">
+            <img class="static" src="img/alphabet/Illu_U(n)_md.png"><img class="active" src="img/alphabet/Illu_U_1_md.gif">
+          </div>
+
+          <div class="audio-author">
+            <p><img src="img/user.png" class="profile-photo" width=10%>
+          &nbsp;Alina Leselust <small class="text-muted">1 day ago</small></p>
+        </div>
+
+           <div class="audio-player">
+              <p audio_url="audio/audio.mp3"
+              class="active list-group-item playlist-item">
+              </p>
+
+                    <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i>
+                    <i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>
+
+            </div>
+
+            <div class="audio-progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+          </div><!-- the end of audio-player-->
+
 
 
           </div><!-- the end of col right-->
@@ -100,7 +145,9 @@
 
       </div><!--end of the container-->
 
-
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+      <script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+      <script src="js/audioPlayer.js" charset="utf-8"></script>
 
   </body>
 </html>
