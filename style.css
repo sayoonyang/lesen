@@ -78,20 +78,7 @@ a:active{
   font-size : 1.3em;
 }
 
-.card-group{
-  margin-top : 2em;
-}
 
-.card.book{
-  border : none;
-}
-
-
-.card-body.cover{
-  border : 5px solid #000;
-  margin : 1em;
-
-}
 
 .col.right{
   border-left : 5px solid #000;
@@ -309,7 +296,6 @@ a:active{
 }
 
 
-
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
@@ -320,6 +306,19 @@ a:active{
     border : 5px solid #000;
 }
 
+.books-container{
+  width : 80%;
+  padding-top : 2em;
+  margin : auto;
+}
+
+
+.book-item{
+  border : 5px solid #000;
+  height : 20em;
+  padding : 1em;
+
+}
 
 .pagination-left{
   float : left;
@@ -343,6 +342,12 @@ a:active{
 #recordingConfirm{
   display: flex;
   justify-content : center;
+}
+
+#recordingsInfo{
+  display : flex;
+  justify-content : center;
+  margin-bottom : 2em;
 }
 
 .recording-li {
