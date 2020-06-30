@@ -61,8 +61,40 @@
 
       <div class="container">
 
-      <div class="dialogbox">
+      <div class="pagination-left">
+        <a role="button" class="btn" href="buch_detail.html"> &lt;&lt;&nbsp;<strong>T</strong></a>
+      </div>
 
+      <div class="pagination-right">
+        <a role="button" class="btn" href="buch_detail.html"> &gt;&gt;&nbsp;<strong>V</strong></a>
+      </div>
+
+      <div class="dialogbox-bookmark">
+
+      <a href="bookmark_my.html" data-toggle="modal" data-target="#exampleModal"><div class="dialogbox-bookmark-plus"></div></a>
+
+      <!--modal-->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Als dein Eselsohr gespeichert.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Schließen</button>
+        <a href="bookmark_my.html" role=button class="btn">Zu meinem Eselsohr</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--end modal-->
 
         <div class="row">
           <div class="col">
@@ -82,7 +114,7 @@
           <a href="bookmark.html">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3 profile-photo" src="img/user.png" width=15%>
+                <img class="mr-3 profile-photo" src="img/user.png" width=13%>
                 <div class="media-body">
                   <h5 class="mt-0 mb-0">Alina Leselust</h5>
                 <small class="text-muted">  1 day ago</small>

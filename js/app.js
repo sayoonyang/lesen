@@ -156,7 +156,7 @@ function createDownloadLink(blob) {
 	var au = document.createElement('audio');
 	var li = document.createElement('li');
 	var link = document.createElement('a');
-  var btn = document.createElement('button');
+	var go = document.createElement('a');
 
 	//add controls to the <audio> element
 	au.controls = true;
@@ -164,8 +164,13 @@ function createDownloadLink(blob) {
 
 
   //add contents to the <button> element
-btn.setAttribute("class", "btn");
-  btn.innerHTML = "Weiter";
+
+go.setAttribute("class", "btn");
+go.setAttribute("href", "bookmark_my.html");
+go.innerHTML="Weiter";
+
+
+
 
   //add new music list
   li.setAttribute("class", "recording-li");
@@ -185,5 +190,5 @@ btn.setAttribute("class", "btn");
 
 	//add the li element to the ordered list
 	recordingsList.appendChild(li);
-  recordingConfirm.appendChild(btn);
+	recordingConfirm.appendChild(go);
 }
