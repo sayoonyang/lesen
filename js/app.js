@@ -180,8 +180,8 @@ ba.setAttribute("type", "email");
 bt_l.setAttribute("for","colFormLabelLg");
 ba_l.setAttribute("for","colFormLabelLg");
 
-bt_l.innerHTML="Buchtitel";
-ba_l.innerHTML="Autorname";
+bt_l.innerHTML="Buchtitel&nbsp;&nbsp;&nbsp;";
+ba_l.innerHTML="Autorname&nbsp;&nbsp;&nbsp;";
 
   //add new music list
   li.setAttribute("class", "recording-li");
@@ -201,9 +201,9 @@ ba_l.innerHTML="Autorname";
 
 	//add the li element to the ordered list
 	recordingsList.appendChild(li);
-	recordingsInfo.appendChild(bt_l);
-	recordingsInfo.appendChild(bt);
-	recordingsInfo.appendChild(ba_l);
-	recordingsInfo.appendChild(ba);
+	recordingsBuchInfo.appendChild(bt_l);
+	recordingsBuchInfo.appendChild(bt);
+	recordingsAutorInfo.appendChild(ba_l);
+	recordingsAutorInfo.appendChild(ba);
 	recordingConfirm.appendChild(go);
 }

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>BuchBuchBuch</title>
+    <!--media viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+    <!--embedded styles-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--for Modal-->
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+
+
+        $(document).ready(function(){
+    function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog");
+
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+        // Align modal when it is displayed
+        $(".modal").on("shown.bs.modal", alignModal);
+
+        // Align modal when user resize the window
+        $(window).on("resize", function(){
+            $(".modal:visible").each(alignModal);
+        });
+    });
+
+        $(document).ready(function(){
+    function alignModal(){
+        var modalDialog = $(this).find(".modal-dialog");
+        /* Applying the top margin on modal dialog to align it vertically center */
+        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+    }
+        // Align modal when it is displayed
+        $(".modal").on("shown.bs.modal", alignModal);
+
+        // Align modal when user resize the window
+        $(window).on("resize", function(){
+            $(".modal:visible").each(alignModal);
+        });
+        });
+    </script>
+
+    <!--for animation -->
+    <script>
+      $("img", "#gifs-rows").hover(function() {
+      $('.preset-file').toggle();
+      $('.gif-file').toggle();
+});
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">Was Liest Du?</h2>
+                <p>Leseposition aussuchen und Liebligsbuch finden</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="img/BuchLogo.png" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Anmelden</a></li>
+            <li class="nav-item"><a role="button" style="border-radius: 0 !important" class="btn" href="register.html">Registrieren</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="card-container">
+
+        <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-01.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-02.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-03.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-04.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-05.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-06.png" width="180px"></a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail.html"><img src="img/alphabet/illu-07.png" width="180px"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-group">
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-08.png" width="180px"></a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-09.png" width="180px"></a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-10.png" width="180px"></a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-11.png" width="180px"></a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-12.png" width="180px"></a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail.html"><img src="img/alphabet/illu-13.png" width="180px"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-14.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-15.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-16.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-17.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-18.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-19.png" width="180px"></a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail.html"><img src="img/alphabet/illu-20.png" width="180px"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-21.png" width="180px"></a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-22.png" width="180px"></a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-23.png" width="180px"></a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-24.png" width="180px"></a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-25.png" width="180px"></a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail.html"><img src="img/alphabet/illu-26.png" width="180px"></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+      </div>
+
+
+
+
+  </body>
+</html>

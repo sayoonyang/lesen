@@ -74,11 +74,18 @@ a:active{
 
 .btn {
   background-color : #fff;
-  border : 5px solid #000;
-  font-size : 1.3em;
+  border : 0.2rem solid #000;
+  font-size : 1.2rem;
 }
 
+.card{
+  border : none;
+  margin : 2rem;
+}
 
+.card-container{
+  margin-top : -5em;
+}
 
 .col.right{
   border-left : 5px solid #000;
@@ -248,7 +255,7 @@ a:active{
 
 .navbar-light .navbar-nav .nav-link{
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.3rem;
 }
 
 .navbar-toggler {
@@ -275,6 +282,7 @@ a:active{
   grid-template-columns: repeat(4, 1fr);
   padding: 0px;
 }
+
 
 
 .static {
@@ -340,16 +348,24 @@ a:active{
   justify-content : center;
 }
 
+#recordingsBuchInfo{
+  display: flex;
+  justify-content : center;
+  margin-top : 2em;
+}
+
+#recordingsAutorInfo{
+  display: flex;
+  justify-content : center;
+  margin-bottom : 2em;
+}
+
+
 #recordingConfirm{
   display: flex;
   justify-content : center;
 }
 
-#recordingsInfo{
-  display : flex;
-  justify-content : center;
-  margin-bottom : 2em;
-}
 
 .recording-li {
   padding : 2em;
