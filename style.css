@@ -242,6 +242,7 @@ a:active{
 .navbar {
   border-bottom: solid 0.3rem; #000;
   background-color : #FFE66D;
+  padding : none;
 }
 
 
