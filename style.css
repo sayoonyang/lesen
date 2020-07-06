@@ -22,8 +22,6 @@ body {
   padding-top : 7em;
   padding-bottom : 5em;
   font-family: 'Oxygen', sans-serif;
-
-  background-color: #fff;
 }
 
 
@@ -72,6 +70,7 @@ a:active{
 * 2.0 Elements
 */
 
+
 .btn {
   background-color : #fff;
   border : 0.2rem solid #000;
@@ -86,6 +85,10 @@ a:active{
 
 .card-container{
   margin-top : -5em;
+}
+
+.connect-info-error{
+  display : none;
 }
 
 .col.right{
@@ -116,7 +119,7 @@ a:active{
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 65px solid #9e9e9e;
+  border-bottom: 65px solid #FFE66D;
   border-right: 65px solid transparent;
   z-index : 1;
 }
@@ -152,7 +155,7 @@ a:active{
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 65px solid #19CE60;
+  border-bottom: 65px solid #FFE66D;
   border-right: 65px solid transparent;
   z-index : 1;
 }
@@ -246,7 +249,7 @@ a:active{
 
 
 .modal-header{
-  background-color : #19CE60;
+  background-color : #FFE66D;
   border : none;
 }
 
@@ -509,11 +512,24 @@ li.active:before {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 641px) {
   body {
   }
 
   .grid-container {
-    display: block;
+    display: none;
   }
+
+  .connect-info-success{
+    display : none;
+  }
+
+  .connect-info-error{
+    display : block;
+    text-align : center;
+  }
+
+
+
+
 }
