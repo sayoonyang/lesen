@@ -22,7 +22,10 @@ body {
   padding-top : 7em;
   padding-bottom : 5em;
   font-family: 'Oxygen', sans-serif;
+  cursor: url(img/my-cursor.png), auto;
+
 }
+
 
 
 p {
@@ -38,7 +41,7 @@ input[type=email]{
 input[type=email]:focus {
   border: none;
   border-bottom: 5px solid #000;
-  background-color : #FFE66D;
+  background-color : yellow;
 }
 
 input[type=password]{
@@ -49,7 +52,7 @@ input[type=password]{
 input[type=password]:focus {
   border: none;
   border-bottom: 5px solid #000;
-  background-color : #FFE66D;
+  background-color : yellow;
 }
 
 a {
@@ -58,7 +61,7 @@ a {
 
 a:hover{
   text-decoration : none;
-  color : #000;
+  cursor: url(img/my-cursor.png), auto;
 }
 
 a:active{
@@ -76,6 +79,11 @@ a:active{
   border : 0.2rem solid #000;
   font-size : 1.2rem;
   color : #000;
+  border-radius : 0 !important;
+}
+
+.btn:hover{
+  box-shadow: 5px 5px;
 }
 
 .card{
@@ -87,7 +95,7 @@ a:active{
   margin-top : -5em;
 }
 
-.connect-info-error{
+.connection{
   display : none;
 }
 
@@ -95,9 +103,20 @@ a:active{
   border-left : 5px solid #000;
 }
 
-.display-4.title{
+
+
+.display-5.title{
   text-transform: uppercase;
-  margin-bottom : 2em;
+
+}
+
+.autorinfo{
+  position : absolute;
+  bottom : 0;
+}
+
+.autorbox{
+  padding-top : 8rem;
 }
 
 .dialogbox{
@@ -119,7 +138,7 @@ a:active{
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 65px solid #FFE66D;
+  border-bottom: 65px solid yellow;
   border-right: 65px solid transparent;
   z-index : 1;
 }
@@ -155,7 +174,7 @@ a:active{
   right: 0%;
   width: 0px;
   height: 0px;
-  border-bottom: 65px solid #FFE66D;
+  border-bottom: 65px solid yellow;
   border-right: 65px solid transparent;
   z-index : 1;
 }
@@ -180,6 +199,11 @@ a:active{
   height : 65px;
   float : right;
   z-index : 2;
+
+}
+
+.dialogbox-bookmark:hover{
+
 }
 
 
@@ -213,7 +237,10 @@ a:active{
 }
 
 
+a.author:hover{
+  color : yellow !important;
 
+}
 
 .bookmark-container{
   margin-bottom : 5%;
@@ -225,14 +252,34 @@ a:active{
 
 .nav-tabs{
   border-bottom : transparent;
+  background-color : #fff;
+  margin-bottom : 1rem;
 }
+
+.nav-tabs .nav-link{
+  border : none;
+  margin-right : 1rem;
+
+}
+
+
+.nav-tabs .nav-link:hover{
+  box-shadow: 5px 5px #000;
+  border : 3px solid #000;
+  background-color : #fff;
+  color : #000;
+  border-radius : 0 !important;
+
+}
+
 
 .nav-tabs .nav-link.active{
-  border-bottom : 3px solid #000;
-  border-color : transparent transparent #000;
+  box-shadow: 5px 5px #000;
+  border: 3px solid #000;
+  background-color : yellow;
   color : #000;
+  border-radius : 0;
 }
-
 
 
 
@@ -242,6 +289,20 @@ a:active{
 }
 
 
+.welcome{
+  color : black;
+  padding : 40px 0;
+  text-align : center;
+  background-color : yellow;
+  border : 0.3rem solid #000;
+  border-radius : 50%;
+  position : fixed;
+  width : 130px;
+  height : 130px;
+  bottom : 50px;
+  right : 50px;
+  z-index : 1;
+}
 
 /**
 * 3.0 Modal
@@ -249,7 +310,7 @@ a:active{
 
 
 .modal-header{
-  background-color : #FFE66D;
+  background-color : yellow;
   border : none;
 }
 
@@ -279,6 +340,11 @@ a:active{
 
 .navbar-light .navbar-nav .nav-link{
   color: #000;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: yellow !important;
   font-size: 1.3rem;
 }
 
@@ -351,6 +417,10 @@ a:active{
   height : 20em;
   padding : 1em;
 
+}
+
+.book-item:hover{
+  box-shadow: 10px 10px;
 }
 
 .pagination-left{
@@ -436,7 +506,6 @@ a:active{
   }
 }
 
-
 /**
 * 7.0 audioPlayer
 */
@@ -450,6 +519,7 @@ a:active{
 
 .audio-cover{
   text-align : center;
+  margin-bottom : 2rem;
 }
 
 .audio-player {
@@ -465,8 +535,14 @@ a:active{
 }
 
 .material-icons {
-  color : #FFE66D;
+  color : blue;
+  border-radius: 50%;
 }
+
+#pause-button {
+  color : red;
+}
+
 
 .list-group-item{
   visibility: hidden;
@@ -514,22 +590,34 @@ li.active:before {
 
 @media only screen and (max-width: 641px) {
   body {
+
   }
 
-  .grid-container {
-    display: none;
-  }
-
-  .connect-info-success{
+  .navbar-light .navbar-toggler-icon {
     display : none;
   }
 
-  .connect-info-error{
+  .card-container {
+    display: none;
+  }
+
+
+  .connection{
     display : block;
     text-align : center;
   }
 
+  .connection-title{
+    background-color:yellow;
+    border : 0.3rem solid #000;
+    padding : 1rem;
+    width : 80%;
+    margin : auto;
+  }
 
+  .welcome{
+    display : none;
+  }
 
 
 }

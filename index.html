@@ -26,44 +26,6 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <!--for Modal-->
-    <script>
-        $(document).ready(function(){
-            $("#myModal").modal('show');
-        });
-
-
-        $(document).ready(function(){
-    function alignModal(){
-        var modalDialog = $(this).find(".modal-dialog");
-
-        /* Applying the top margin on modal dialog to align it vertically center */
-        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
-    }
-        // Align modal when it is displayed
-        $(".modal").on("shown.bs.modal", alignModal);
-
-        // Align modal when user resize the window
-        $(window).on("resize", function(){
-            $(".modal:visible").each(alignModal);
-        });
-    });
-
-        $(document).ready(function(){
-    function alignModal(){
-        var modalDialog = $(this).find(".modal-dialog");
-        /* Applying the top margin on modal dialog to align it vertically center */
-        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
-    }
-        // Align modal when it is displayed
-        $(".modal").on("shown.bs.modal", alignModal);
-
-        // Align modal when user resize the window
-        $(window).on("resize", function(){
-            $(".modal:visible").each(alignModal);
-        });
-        });
-    </script>
 
     <!--for animation -->
     <script>
@@ -73,31 +35,17 @@
 });
     </script>
 
+    <!--for tooltip-->
+    <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
   </head>
 
   <body>
 
-    <div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-title">
-                <div class="connect-info-success">
-                  <h2>Was liest du?</h2>
-                </div>
-                <div class="connect-info-error">
-                  <h2>Es tut mir leid</h2>
-                </div>
-              </div>
-                <div class="connect-info-success">Leseposition aussuchen und Liebligsbuch finden</div>
-                <div class="connect-info-error">BuchBuchBuch ist zurzeit nur mit dem Browser verfügbar.</div>
-            </div>
-        </div>
-    </div>
-    </div>
 
 
 
@@ -118,119 +66,184 @@
         </div>
       </nav>
 
+      <div class="welcome">
+        <h4 data-toggle="tooltip" data-placement="top" title="Eine Leseposition aussuchen und Lieblingsbuch finden"><strong>Was liest du?<strong></h4>
+      </div>
 
-      <div class="grid-container">
+      <div class="connection">
+        <div class="connection-title">
+        <h3>Es tut mir leid!</h3>
+        <p>BuchBuchBuch ist zurzeit nur auf dem Browser verfügbar.</p>
+      </div>
+        <img src="img/alphabet/illu-02.gif" width="80%">
+      </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-01.png" width="300px"><img class="active" src="img/alphabet/illu-01.gif" width="300px"></a>
-        </div>
+      <div class="card-container">
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-02.png" width="300px"><img class="active" src="img/alphabet/illu-02.gif" width="300px"></a>
-        </div>
+        <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail_a.html"><img class="static" src="img/alphabet/illu-01.png" width="180px"><img class="active" src="img/alphabet/illu-01.gif" width="180px"></a>
+              </div>
+            </div>
 
-        <div class="grid-item">
-            <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-03.png" width="300px"><img class="active" src="img/alphabet/illu-03.gif" width="300px"></a>
-        </div>
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail_b.html"><img class="static" src="img/alphabet/illu-02.png" width="180px"><img class="active" src="img/alphabet/illu-02.gif" width="180px"></a>
+              </div>
+            </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-04.png" width="300px"><img class="active" src="img/alphabet/illu-04.gif" width="300px"></a>
-        </div>
+            <div class="card">
+              <div class="card-body">
+                  <a href="buch_detail_c.html"><img class="static" src="img/alphabet/illu-03.png" width="180px"><img class="active" src="img/alphabet/illu-03.gif" width="180px"></a>
+              </div>
+            </div>
 
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail_d.html"><img class="static" src="img/alphabet/illu-04.png" width="180px"><img class="active" src="img/alphabet/illu-04.gif" width="180px"></a>
+              </div>
+            </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-05.png" width="300px"><img class="active" src="img/alphabet/illu-05.gif" width="300px"></a>
-        </div>
+            <div class="card">
+              <div class="card-body">
+                <a href="buch_detail_e.html"><img class="static" src="img/alphabet/illu-05.png" width="180px"><img class="active" src="img/alphabet/illu-05.gif" width="180px"></a>
+              </div>
+            </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-06.png" width="300px"><img class="active" src="img/alphabet/illu-06.gif" width="300px"></a>
-        </div>
+            <div class="card">
+              <div class="card-body">
+                <a href="/"><img class="static" src="img/alphabet/illu-06.png" width="180px"><img class="active" src="img/alphabet/illu-06.gif" width="180px"></a>
+              </div>
+            </div>
 
+            <div class="card">
+              <div class="card-body">
+                <a href="/"><img class="static" src="img/alphabet/illu-07.png" width="180px"><img class="active" src="img/alphabet/illu-07.gif" width="180px"></a>
+              </div>
+            </div>
+          </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-07.png" width="300px"><img class="active" src="img/alphabet/illu-07.gif" width="300px"></a>
-        </div>
+          <div class="card-group">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/"><img class="static" src="img/alphabet/illu-08.png" width="180px"><img class="active" src="img/alphabet/illu-08.gif" width="180px"></a>
+                </div>
+              </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-08.png" width="300px"><img class="active" src="img/alphabet/illu-08.gif" width="300px"></a>
-        </div>
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail_i.html"><img class="static" src="img/alphabet/illu-09.png" width="180px"><img class="active" src="img/alphabet/illu-09.gif" width="180px"></a>
+                </div>
+              </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-09.png" width="300px"><img class="active" src="img/alphabet/illu-09.gif" width="300px"></a>
-        </div>
+              <div class="card">
+                <div class="card-body">
+                  <a href="/"><img class="static" src="img/alphabet/illu-10.png" width="180px"><img class="active" src="img/alphabet/illu-10.gif" width="180px"></a>
+                </div>
+              </div>
 
-        <div class="grid-item">
-            <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-10.png" width="300px"><img class="active" src="img/alphabet/illu-10.gif" width="300px"></a>
-        </div>
+              <div class="card">
+                <div class="card-body">
+                  <a href="buch_detail_k.html"><img class="static" src="img/alphabet/illu-11.png" width="180px"><img class="active" src="img/alphabet/illu-11.gif" width="180px"></a>
+                </div>
+              </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-11.png" width="300px"><img class="active" src="img/alphabet/illu-11.gif" width="300px"></a>
-        </div>
+              <div class="card">
+                <div class="card-body">
+                  <a href="/"><img class="static" src="img/alphabet/illu-12.png" width="180px"><img class="active" src="img/alphabet/illu-12.gif" width="180px"></a>
+                </div>
+              </div>
 
+              <div class="card">
+                <div class="card-body">
+                  <a href="/"><img class="static" src="img/alphabet/illu-13.png" width="180px"><img class="active" src="img/alphabet/illu-13.gif" width="180px"></a>
+                </div>
+              </div>
+            </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-12.png" width="300px"><img class="active" src="img/alphabet/illu-12.gif" width="300px"></a>
-        </div>
+            <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <a href="/"><img class="static" src="img/alphabet/illu-14.png" width="180px"><img class="active" src="img/alphabet/illu-14.gif" width="180px"></a>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-13.png" width="300px"><img class="active" src="img/alphabet/illu-13.gif" width="300px"></a>
-        </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="/"><img class="static" src="img/alphabet/illu-15.png" width="180px"><img class="active" src="img/alphabet/illu-15.gif" width="180px"></a>
+                  </div>
+                </div>
 
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail_p.html"><img class="static" src="img/alphabet/illu-16.png" width="180px"><img class="active" src="img/alphabet/illu-16.gif" width="180px"></a>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-14.png" width="300px"><img class="active" src="img/alphabet/illu-14.gif" width="300px"></a>
-        </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="/"><img class="static" src="img/alphabet/illu-17.png" width="180px"><img class="active" src="img/alphabet/illu-17.gif" width="180px"></a>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-15.png" width="300px"><img class="active" src="img/alphabet/illu-15.gif" width="300px"></a>
-        </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="buch_detail_r.html"><img class="static" src="img/alphabet/illu-18.png" width="180px"><img class="active" src="img/alphabet/illu-18.gif" width="180px"></a>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-16.png" width="300px"><img class="active" src="img/alphabet/illu-16.gif" width="300px"></a>
-        </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="/"><img class="static" src="img/alphabet/illu-19.png" width="180px"><img class="active" src="img/alphabet/illu-19.gif" width="180px"></a>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-            <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-17.png" width="300px"><img class="active" src="img/alphabet/illu-17.gif" width="300px"></a>
-        </div>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="/"><img class="static" src="img/alphabet/illu-20.png" width="180px"><img class="active" src="img/alphabet/illu-20.gif" width="180px"></a>
+                  </div>
+                </div>
+              </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-18.png" width="300px"><img class="active" src="img/alphabet/illu-18.gif" width="300px"></a>
-        </div>
+              <div class="card-group">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="buch_detail_u.html"><img class="static" src="img/alphabet/illu-21.png" width="180px"><img class="active" src="img/alphabet/illu-21.gif" width="180px"></a>
+                    </div>
+                  </div>
 
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="/"><img class="static" src="img/alphabet/illu-22.png" width="180px"><img class="active" src="img/alphabet/illu-22.gif" width="180px"></a>
+                    </div>
+                  </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-19.png" width="300px"><img class="active" src="img/alphabet/illu-19.gif" width="300px"></a>
-        </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="/"><img class="static" src="img/alphabet/illu-23.png" width="180px"><img class="active" src="img/alphabet/illu-23.gif" width="180px"></a>
+                    </div>
+                  </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-20.png" width="300px"><img class="active" src="img/alphabet/illu-20.gif" width="300px"></a>
-        </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="/"><img class="static" src="img/alphabet/illu-24.png" width="180px"><img class="active" src="img/alphabet/illu-24.gif" width="180px"></a>
+                    </div>
+                  </div>
 
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="/"><img class="static" src="img/alphabet/illu-25.png" width="180px"><img class="active" src="img/alphabet/illu-25.gif" width="180px"></a>
+                    </div>
+                  </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-21.png" width="300px"><img class="active" src="img/alphabet/illu-21.gif" width="300px"></a>
-        </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="/"><img class="static" src="img/alphabet/illu-26.png" width="180px"><img class="active" src="img/alphabet/illu-26.gif" width="180px"></a>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-22.png" width="300px"><img class="active" src="img/alphabet/illu-22.gif" width="300px"></a>
-        </div>
-
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-23.png" width="300px"><img class="active" src="img/alphabet/illu-23.gif" width="300px"></a>
-        </div>
-
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-24.png" width="300px"><img class="active" src="img/alphabet/illu-24.gif" width="300px"></a>
-        </div>
-
-
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-25.png" width="300px"><img class="active" src="img/alphabet/illu-25.gif" width="300px"></a>
-        </div>
-
-        <div class="grid-item">
-          <a href="buch_detail.html"><img class="static" src="img/alphabet/illu-26.png" width="300px"><img class="active" src="img/alphabet/illu-26.gif" width="300px"></a>
-        </div>
 
 
       </div>

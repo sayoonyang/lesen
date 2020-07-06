@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>BuchBuchBuch</title>
+
+    <!--media viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+
+    <!--google material-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+    <!--jquery for Audioplayer-->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+
+    <!--embedded styles-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <!-- for animation -->
+
+    <script>
+      $("img", "#gifs-rows").hover(function() {
+      $('.preset-file').toggle();
+      $('.gif-file').toggle();
+    });
+    </script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="img/BuchLogo.png" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Anmelden</a></li>
+            <li class="nav-item"><a role="button" style="border-radius: 0 !important" class="btn" href="register.html">Registrieren</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+
+      <div class="pagination-left">
+        <a role="button" class="btn" href="buch_detail_c.html"> &lt;&lt;&nbsp;<strong>C</strong></a>
+      </div>
+
+      <div class="pagination-right">
+        <a role="button" class="btn" href="buch_detail_e.html"> &gt;&gt;&nbsp;<strong>E</strong></a>
+      </div>
+
+      <div class="dialogbox-bookmark">
+
+      <a href="bookmark_my.html" data-toggle="modal" data-target="#exampleModal"><div class="dialogbox-bookmark-plus"></div></a>
+
+      <!--modal-->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Als dein Eselsohr gespeichert.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Schließen</button>
+        <a href="bookmark_my.html" role=button class="btn">Zu meinem Eselsohr</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--end modal-->
+
+        <div class="row">
+          <div class="col">
+            <h1 class="display-5 title">Das achte Leben<br>(Für Brilka)</h1>
+
+            <div class="autorinfo">
+            <h4>von</h4>
+            <h3>Nino Haratischwili</h3>
+            </div>
+          </div>
+          <div class="col right">
+
+
+          <div class="audio-cover">
+            <img class="static" src="img/alphabet/illu-04.png" width="300px"><img class="active" src="img/alphabet/illu-04.gif" width="300px">
+          </div>
+
+          <div class="audio-author">
+          <a class="author" href="bookmark.html">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3 profile-photo" src="img/user.png" width=13%>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-0">Alina Weber</h5>
+                <small class="text-muted">3 days ago</small>
+                </div>
+              </li>
+            </ul>
+          </a>
+          </div>
+
+           <div class="audio-player">
+              <p audio_url="audio/das.mp3"
+              class="active list-group-item playlist-item">
+              </p>
+
+                    <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i>
+                    <i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>
+
+            </div>
+
+            <div class="audio-progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+          </div><!-- the end of audio-player-->
+
+
+
+          </div><!-- the end of col right-->
+        </div>
+      </div>
+
+        <!--flexbox-->
+        <div class="books-container">
+
+        <div class="d-flex flex-wrap">
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Buchtitle</h2>
+              <p>Autor</p>
+              <p><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+
+          </div>
+        <!--end of flexbox-->
+
+      </div><!--end of books-container-->
+
+      </div><!--end of the container-->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+      <script src="js/jquery-ui-slider.js" charset="utf-8"></script>
+      <script src="js/audioPlayer.js" charset="utf-8"></script>
+
+  </body>
+</html>
