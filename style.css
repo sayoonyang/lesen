@@ -278,7 +278,17 @@ a.author:hover{
   border-radius : 0;
 }
 
+.postprocess{
+  position : absolute;
+  top : 3em;
+  right : 6em;
+  z-index : 2;
+  text-align : right;
+}
 
+.process-now{
+  font-weight : bold;
+}
 
 
 .profile-photo{
