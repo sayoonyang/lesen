@@ -532,13 +532,14 @@ a.author:hover{
 .audio-player {
   width: 70%;
   position : absolute;
-  top : 59%;
-  left: 5%;
+  top : 62%;
+  left: 10%;
   z-index : 1;
 }
 .audio-player i {
-  font-size: 5rem;
+  font-size: 3.5rem;
   display : inline-block;
+  background-color : #000;
 }
 
 .material-icons {
@@ -547,9 +548,8 @@ a.author:hover{
 }
 
 #pause-button {
-  color : blue;
+  color : #17a2b8;
 }
-
 
 .list-group-item{
   visibility: hidden;
