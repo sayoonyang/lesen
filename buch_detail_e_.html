@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <!--google material-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -69,64 +71,69 @@
       <div class="container">
 
       <div class="pagination-left">
-        <a role="button" class="btn" href="buch_detail_a.html"> &lt;&lt;&nbsp;<strong>A</strong></a>
+        <a role="button" class="btn" href="buch_detail_d.html"> &lt;&lt;&nbsp;<strong>D</strong></a>
       </div>
 
       <div class="pagination-right">
-        <a role="button" class="btn" href="buch_detail_c.html"> &gt;&gt;&nbsp;<strong>C</strong></a>
+        <a role="button" class="btn" href="/"> &gt;&gt;&nbsp;<strong>F</strong></a>
       </div>
 
-      <div class="dialogbox-bookmark">
+      <div class="dialogbox-bookmark-already">
 
-      <a href="bookmark_my.html" data-toggle="modal" data-target="#exampleModal"><div class="dialogbox-bookmark-plus"></div></a>
+      <a href="bookmark_my.html" data-toggle="modal" data-target="#exampleModal">
+        <div class="dialogbox-bookmark-plus"></div>
+      </a>
+
 
       <!--modal-->
 
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Unter mein Eselsohr gespeichert.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Schließen</button>
+              <a href="bookmark_my.html" role=button class="btn">Zum Eselsohr</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        Unter mein Eselsohr gespeichert.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn" data-dismiss="modal">Schließen</button>
-        <a href="bookmark_my.html" role=button class="btn">Zum Eselsohr</a>
-      </div>
-    </div>
-  </div>
-</div>
 
       <!--end modal-->
 
         <div class="row">
           <div class="col">
-            <h1 class="display-5 title">Brüder</h1>
+            <h1 class="display-5 title">Ein ganzes Leben</h1>
 
             <div class="autorinfo">
             <h4>von</h4>
-            <h3>Jackie Thomae</h3>
+            <h3>Robert seethaler</h3>
             </div>
           </div>
+
+
           <div class="col right">
 
 
           <div class="audio-cover">
-            <img class="static" src="img/alphabet/illu-02.png" width="300px"><img class="active" src="img/alphabet/illu-02.gif" width="300px">
+            <img class="static" src="img/alphabet/illu-05.png" width="300px"><img class="active" src="img/alphabet/illu-05.gif" width="300px">
           </div>
 
           <div class="audio-author">
-          <a class="author" href="bookmark.html">
+          <a class="author" href="/">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3 profile-photo" src="img/user.png" width=13%>
+                <img class="mr-3 profile-photo" src="img/user_lily.png" width=13%>
                 <div class="media-body">
-                  <h5 class="mt-0 mb-0">Alina Weber</h5>
-                <small class="text-muted">Vor 2 Tagen</small>
+                  <h5 class="mt-0 mb-0">Lilian Buchbuch</h5>
+                <small class="text-muted">Vor einem Tag</small>
                 </div>
               </li>
             </ul>
@@ -134,12 +141,16 @@
           </div>
 
            <div class="audio-player">
-              <p audio_url="audio/corpus.mp3"
+              <p audio_url="audio/einganzes.mp3"
               class="active list-group-item playlist-item">
               </p>
+              <div class="player-button">
+               <button type="button" id="play-button" class="btn-light btn-circle btn-xl play-pause">&nbsp;<i class="fa fa-play" aria-hidden="true"></i></button>
+              <!--  <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i> -->
+            <button type="button" id="pause-button" class="btn-info btn-circle btn-xl play-pause d-none"><i class="fa fa-pause" aria-hidden="true"></i></button>
 
-                    <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i>
-                    <i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>
+                <!--<i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>-->
+              </div>
 
             </div>
 
@@ -148,6 +159,7 @@
             </div>
 
             <audio id="audio-player" class="d-none" src="" type="audio/mp3" controls="controls"></audio>
+
           </div><!-- the end of col right-->
 
 
@@ -159,7 +171,7 @@
                   <div class="dropdown-sort">
                         <div class="dropdown show">
                           <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Neueste Aufnahme
+                            Alphabetisch
                           </a>
 
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
@@ -171,18 +183,88 @@
 
       </div><!--container ends-->
 
+
         <!--flexbox-->
         <div class="books-container">
 
         <div class="d-flex flex-wrap">
 
+          <div class="w-25 p-3">
+            <div class="book-item">
+            <h2>Ein Geschenk für Rosa</h2>
+            <div class="autorbox">
+            <p>John Berger</p>
+            <p><small class="text-muted">Vor 4 Tagen</small></p>
+          </div>
+          </div>
+          </div>
+
+            <div class="w-25 p-3">
+              <a class="buch" href="buch_detail_e2_.html">
+              <div class="book-item">
+              <h2>Ein wenig <br> Leben</h2>
+              <div class="autorbox">
+              <p>Yanagihara Hanya</p>
+              <p><small class="text-muted">Vor 2 Tagen</small></p>
+            </div>
+            </div>
+            </a>
+            </div>
+
             <div class="w-25 p-3">
               <div class="book-item">
-                <h2>Buchtitle</h2>
-                <p>Autor</p>
-                <p><small class="text-muted">Vor 3 Tagen</small></p>
-                </div>
+              <h2>Eine Frage der Zeit</h2>
+              <div class="autorbox">
+              <p>Alex Capus</p>
+              <p><small class="text-muted">Vor 3 Tagen</small></p>
             </div>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Eine Tür aus Glas, weit offen</h2>
+              <div class="autorbox">
+              <p>Christoph Meckel</p>
+              <p><small class="text-muted">Vor 3 Tagen</small></p>
+            </div>
+            </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Eintauchen in den Wald</h2>
+              <div class="autorbox">
+              <p>Miki Sakamoto</p>
+              <p><small class="text-muted">Vor 3 Tagen</small></p>
+            </div>
+            </div>
+            </div>
+
+
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Entscheidung in Kiew</h2>
+              <div class="autorbox">
+              <p>Karl Schlögel</p>
+              <p><small class="text-muted">Vor 4 Tagen</small></p>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Es ist besser <br>so</h2>
+              <div class="autorbox">
+              <p>Hans Bötticher</p>
+              <p><small class="text-muted">Vor 2 Tagen</small></p>
+            </div>
+            </div>
+            </div>
+
+
 
 
           </div>

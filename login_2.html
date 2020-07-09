@@ -3,9 +3,7 @@
 
   <head>
 
-    <title>BuchBuchBuch</title>
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>BuchBuchBuch | Anmelden</title>
 
     <!--media viewport-->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -31,10 +29,10 @@
 
     <meta charset="UTF-8">
 
-</head>
-
+  </head>
 
   <body>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="img/BuchLogo.png" height="30px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,60 +43,45 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.html">Ausloggen</a></li>
-            <li class="nav-item"><a class="nav-link" href="bookmark_my.html"><img class="profile-photo" src="img/user_lily_sm.png" height="30px">&nbsp;Lily Buchbuch</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Anmelden</a></li>
+            <li class="nav-item"><a role="button" style="border-radius: 0 !important" class="btn" href="register.html">Registrieren</a></li>
 
           </ul>
         </div>
       </nav>
 
       <div class="container">
-
       <div class="dialogbox">
 
-        <h1 class="display-4">Buchinfo</h1>
-        <p></p>
-        <div class="postprocess">
-          <div class="process-now"><i class="fas fa-arrow-alt-circle-right"></i>&nbsp; Buchinfo eingeben(1/2)</div>
-          <div class="process-notnow">&nbsp;Zitat aufnehmen(2/2)</div>
+        <h1 class="display-4">Anmelden</h1>
+
+      <form>
+        <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg"><h3>ID</h3></label>
+        <div class="col-sm-7">
+          <input type="email" style="border-radius: 0 !important" class="form-control form-control-lg" id="colFormLabelLg" placeholder="ID">
         </div>
+      </div>
+
+      <div class="form-group row">
+      <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg"><h3>Password</h3></label>
+      <div class="col-sm-7">
+        <input type="password" style="border-radius: 0 !important" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Password">
+      </div>
+    </div>
 
 
-          <form>
-            <div class="form-group row">
-            <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg"><h3>Buchtitel</h3></label>
-            <div class="col-sm-7">
-              <input type="email" style="border-radius: 0 !important" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Wie heißt dein Buch?">
-            </div>
-          </div>
+      <div class="text-center">
+        <a href="buch_detail_e2_2.html" role="button" style="border-radius: 0 !important" class="btn">Anmelden</a>
+      </div>
 
-          <div class="form-group row">
-          <label for="colFormLabelLg" class="col-sm-5 col-form-label col-form-label-lg"><h3>Autorname</h3></label>
-          <div class="col-sm-7">
-            <input type="email" style="border-radius: 0 !important" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Wie heißt der Autor?">
-          </div>
-        </div>
+  </form>
+  <div class="text-center"><h5>Hast du kein Konto? <a class="register" href="register.html">Hier</a> kannst du dich registrieren.</h5></div>
+</div>
+</div>
 
 
-          <div class="text-center">
-            <a href="record.html" role="button" style="border-radius: 0 !important" class="btn">Weiter zur Aufnahme</a>
-          </div>
 
-        </form>
-
-
-        <p></p>
-
-
-      </div><!--the end of dialogbox-->
-
-      </div><!--the end of container-->
-
-
-  <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
-
-  <script src="js/app.js"></script>
 
   </body>
-
 </html>

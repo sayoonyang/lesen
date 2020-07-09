@@ -168,7 +168,7 @@ function createDownloadLink(blob) {
   //add contents to the <button> element
 
 go.setAttribute("class", "btn");
-go.setAttribute("href", "bookmark_my.html");
+go.setAttribute("href", "bookmark_my_.html");
 go.innerHTML="Posten";
 
 

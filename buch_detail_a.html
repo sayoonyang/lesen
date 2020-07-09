@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
     <!--google material-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -71,7 +74,7 @@
 
 
       <div class="pagination-right">
-        <a role="button" class="btn" href="buch_detail_b.html"> &gt;&gt;&nbsp;<strong>B</strong></a>
+        <a role="button" class="btn" href="/"> &gt;&gt;&nbsp;<strong>B</strong></a>
       </div>
 
       <div class="dialogbox-bookmark">
@@ -118,12 +121,12 @@
           </div>
 
           <div class="audio-author">
-          <a class="author" href="bookmark.html">
+          <a class="author" href="/">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3 profile-photo" src="img/user.png" width=13%>
+                <img class="mr-3 profile-photo" src="img/user_lily.png" width=13%>
                 <div class="media-body">
-                  <h5 class="mt-0 mb-0">Lilan Walters</h5>
+                  <h5 class="mt-0 mb-0">Lilan Buchbuch</h5>
                 <small class="text-muted">Vor 3 Tagen</small>
                 </div>
               </li>
@@ -136,8 +139,13 @@
               class="active list-group-item playlist-item">
               </p>
 
-                    <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i>
-                    <i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>
+              <div class="player-button">
+               <button type="button" id="play-button" class="btn-light btn-circle btn-xl play-pause">&nbsp;<i class="fa fa-play" aria-hidden="true"></i></button>
+              <!--  <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i> -->
+            <button type="button" id="pause-button" class="btn-info btn-circle btn-xl play-pause d-none"><i class="fa fa-pause" aria-hidden="true"></i></button>
+
+                <!--<i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>-->
+              </div>
 
             </div>
 
@@ -174,16 +182,54 @@
         <div class="d-flex flex-wrap">
 
             <div class="w-25 p-3">
-              <a href="buch_detail_a_.html">
+              <a class="buch" href="buch_detail_a_.html">
               <div class="book-item">
               <h2>Arbeit und Struktur</h2></a>
               <p>Wolfgang Herrndorf</p>
-              <p><small class="text-muted">Vor 3 Tagen</small></p>
+              <p><small class="text-muted">Vor einer Minute</small></p>
               </div>
               </a>
             </div>
 
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Asymmetrie</h2></a>
+              <p>Lisa Halliday</p>
+              <p><small class="text-muted">Vor 3 Tagen</small></p>
+              </div>
+            </div>
 
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>A und X</h2></a>
+              <p>John Berger </p>
+              <p><small class="text-muted">Vor 4 Tagen</small></p>
+              </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Außer uns spricht niemand über uns</h2></a>
+              <p>Wilhelm Genazino</p>
+              <p><small class="text-muted">Vor 4 Tagen</small></p>
+              </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Auf dem Schwarzen Berg</h2></a>
+              <p>Bruce Chatwin</p>
+              <p><small class="text-muted">Vor 4 Tagen</small></p>
+              </div>
+            </div>
+
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Aus tiefstem Vergessen</h2></a>
+              <p>Patrick Modiano</p>
+              <p><small class="text-muted">Vor 5 Tagen</small></p>
+              </div>
+            </div>
 
           </div>
         <!--end of flexbox-->

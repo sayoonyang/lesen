@@ -86,6 +86,10 @@ a:active{
   box-shadow: 5px 5px;
 }
 
+a.buch:hover{
+  color : #000;
+}
+
 .card{
   border : none;
   margin : 2rem;
@@ -104,7 +108,7 @@ a:active{
 }
 
 .col.right{
-  border-left : 0.15rem solid #000;
+  border-left : 0.3rem solid #000;
 }
 
 
@@ -207,6 +211,41 @@ a:active{
 
 }
 
+.dialogbox-bookmark-already{
+  padding : 2em;
+  width : 70%;
+  margin : auto;
+  position: relative;
+  background:linear-gradient(to bottom,#000 50%,transparent 0) 0 0/calc(100% - 20px) 10px no-repeat,
+  linear-gradient(to bottom,transparent 50%,#000 0) 0 100%/100% 10px no-repeat,
+  linear-gradient(to right,#000 50%,transparent 0) 0 0/10px 100% no-repeat,
+  linear-gradient(to right,transparent 50%,#000 0) 100% 20px/10px 100% no-repeat,
+  linear-gradient(to top right,transparent 50%,#000 50%,#000 calc(50% + 1px),transparent calc(50% + 2px)) 100% 0/20px 20px no-repeat;
+}
+
+.dialogbox-bookmark-already:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 65px solid #eee;
+  border-right: 65px solid transparent;
+  z-index : 1;
+}
+
+.dialogbox-bookmark-already:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 65px solid #FFF;
+  border-left: 65px solid transparent;
+}
+
 
 .form-group{
   padding : 1em;
@@ -297,6 +336,7 @@ a.author:hover{
 
 .profile-photo{
   border-radius: 50%;
+  border : 0.1rem solid #000;
 }
 
 
@@ -416,7 +456,7 @@ a.author:hover{
     border-radius: 35px;
     font-size: 24px;
     line-height: 1.33;
-    border : 0.3rem solid #000;
+    border : 0.25rem solid #000;
 }
 
 .books-container{
@@ -539,24 +579,19 @@ a.author:hover{
 .audio-player {
   width: 70%;
   position : absolute;
-  top : 62%;
-  left: 10%;
+  top : 60.5%;
+  left: 8%;
   z-index : 1;
 }
-.audio-player i {
-  font-size: 3.5rem;
-  display : inline-block;
-  background-color : #000;
+
+.btn-light{
+  background-color : yellow;
 }
 
-.material-icons {
-  color : yellow;
-  border-radius: 50%;
+.btn-light:hover{
+
 }
 
-#pause-button {
-  color : #17a2b8;
-}
 
 .dropdown-sort{
 
@@ -584,7 +619,7 @@ a.dropdown-item:hover{
   width : 70%;
   position : absolute;
   top : 57%;
-  left : 24.5%;
+  left : 26.5%;
   margin-top : 85px;
 }
 
