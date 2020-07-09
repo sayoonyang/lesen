@@ -400,6 +400,15 @@ a.author:hover{
   text-align : right;
 }
 
+a.register{
+  text-decoration : underline;
+}
+
+a.register:hover{
+  text-decoration : none;
+  color : yellow;
+}
+
 /**
 * 5.0 Container(gif)
 */
@@ -452,7 +461,7 @@ a.author:hover{
 
 
 .book-item{
-  border : 5px solid #000;
+  border : 0.3rem solid #000;
   height : 20em;
   padding : 1em;
 
@@ -587,7 +596,7 @@ a.author:hover{
 }
 
 .dropdown-menu.dropdown-menu-right{
-
+  margin-top : -0.1rem;
   border-radius: 0;
   border : 0.2rem solid #000;
 }
