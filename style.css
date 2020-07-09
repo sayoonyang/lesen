@@ -90,6 +90,11 @@ a.buch:hover{
   color : #000;
 }
 
+#now{
+    animation: shadow-pulse 1s 1;
+  }
+
+
 .card{
   border : none;
   margin : 2rem;
@@ -251,26 +256,6 @@ a.buch:hover{
   padding : 1em;
 }
 
-.index-animation{
-  width: 100px;
-  height:100px;
-  background-color: red;
-  border-radius : 50%;
-  border : 3px solid #000;
-  position: absolute;
-  animation-name: index-animation;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  z-index : 1;
-}
-
-@keyframes index-animation {
-  0%   {background-color:red; left:20%; top:20%;}
-  25%  {background-color:yellow; left:90%; top:20%;}
-  50%  {background-color:blue; left:90%; top:90%;}
-  75%  {background-color:green; left:20%; top:90%;}
-  100% {background-color:red; left:20%; top:20%;}
-}
 
 .text-center{
  padding-bottom : 1em;
