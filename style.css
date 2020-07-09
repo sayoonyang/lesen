@@ -73,6 +73,11 @@ a:active{
 * 2.0 Elements
 */
 
+.autorinfo{
+  position : absolute;
+  bottom : 0;
+}
+
 
 .btn {
   background-color : #fff;
@@ -123,10 +128,6 @@ a.buch:hover{
 
 }
 
-.autorinfo{
-  position : absolute;
-  bottom : 0;
-}
 
 
 .dialogbox{
@@ -139,6 +140,7 @@ a.buch:hover{
   linear-gradient(to right,#000 50%,transparent 0) 0 0/10px 100% no-repeat,
   linear-gradient(to right,transparent 50%,#000 0) 100% 20px/10px 100% no-repeat,
   linear-gradient(to top right,transparent 50%,#000 50%,#000 calc(50% + 1px),transparent calc(50% + 2px)) 100% 0/20px 20px no-repeat;
+  background-color : #fff;
 }
 
 .dialogbox:before {
@@ -162,6 +164,7 @@ a.buch:hover{
   height: 0px;
   border-top: 65px solid #FFF;
   border-left: 65px solid transparent;
+
 }
 
 
@@ -341,6 +344,21 @@ a.author:hover{
 }
 
 
+.login-bg{
+  background-image : url("img/alphabet/illu-12.gif");
+  background-position : center;
+  background-repeat : no-repeat;
+  height : 50rem;
+
+}
+
+.register-bg{
+  background-image : url("img/alphabet/illu-20.gif");
+  background-position : center;
+  background-repeat : no-repeat;
+  height : 40rem;
+}
+
 
 /**
 * 3.0 Modal
@@ -408,6 +426,11 @@ a.register:hover{
   text-decoration : none;
   color : yellow;
 }
+
+
+
+
+
 
 /**
 * 5.0 Container(gif)
@@ -583,7 +606,7 @@ a.register:hover{
 }
 
 .btn-light:hover{
-
+  background-color : #e5e500;
 }
 
 
