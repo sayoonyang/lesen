@@ -432,7 +432,7 @@ a.author:hover{
 
 
 .navbar {
-  border-bottom: solid 0.25rem; #000;
+  border-bottom: solid 0.25rem #000;
   background-color : #fff;
   padding : none;
 }
