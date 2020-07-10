@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>BuchBuchBuch</title>
+    <!--media viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+<link rel="icon" type="image/png" href="img/favicon.png"/>
+
+
+    <!--embedded styles-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+  </head>
+
+
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="img/BuchLogo.png" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Ausloggen</a></li>
+            <li class="nav-item"><a class="nav-link" href="bookmark_my.html"><img class="profile-photo" src="img/user_lily_sm.png" height="30px">&nbsp;Lily Buchbuch</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <div class="bookmark-container">
+        <div class="row">
+            <div class="col">
+              <ul class="list-unstyled">
+                <li class="media">
+                  <img class="mr-3 profile-photo" src="img/user_lily.png" width=13%>
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-0">Lily Buchbuch</h5>
+                  <small class="text-muted">2 Bücher empfohlen</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <div class="text-center">
+              <a role="button" style="border-radius: 0 !important" class="btn" href="post.html">Aufnehmen und Posten</a>
+              </div>
+            </div>
+        </div>
+        </div><!--end of bookmark-container-->
+
+
+        <div class="bookmark-tabs">
+
+          <div class="tabs">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="bookmark-tab" data-toggle="tab" href="#bookmark" role="tab" aria-controls="bookmark" aria-selected="true"><h5>Mein Eselsohr</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="recording-tab" data-toggle="tab" href="#recording" role="tab" aria-controls="recording" aria-selected="false"><h5>Meine Aufnahme</h5></a>
+              </li>
+            </ul>
+            <div class="tab-content my-tab" id="myTabContent">
+              <div class="tab-pane fade show active" id="bookmark" role="tabpanel" aria-labelledby="bookmark-tab">
+
+                <!--flexbox-->
+
+                <!--mein Bookmark-->
+                <div class="d-flex flex-wrap">
+
+                  <div class="w-25 p-3">
+                    <a class="buch" href="buch_detail_u.html">
+                    <div class="book-item">
+                    <h2>Ein wenig Leben</h2>
+                    <p>Yanagihara Hanya</p>
+                    <p><small class="text-muted">Vor 2 Tagen</small></p>
+                  </div>
+                  </a>
+                  </div>
+
+                  <div class="w-25 p-3">
+                    <a class="buch" href="buch_detail_u.html">
+                    <div class="book-item">
+                    <h2>Unendliche Geschichte</h2>
+                    <p>Michael Ende</p>
+                    <p><small class="text-muted">Vor einem Tag</small></p>
+                  </div>
+                  </a>
+                  </div>
+
+                    <div class="w-25 p-3">
+                      <a class="buch" href="buch_detail_r.html">
+                      <div class="book-item">
+                      <h2>Rendezvous mit einem Oktopoden</h2>
+                      <p>Sy Montgomery</p>
+                      <p><small class="text-muted">Vor 2 Tagen</small></p>
+                    </div>
+                    </a>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <a class="buch" href="buch_detail_k.html">
+                      <div class="book-item">
+                      <h2>Kleine Veganer-Bibel</h2>
+                      <p>Sarah Schocke</p>
+                      <p><small class="text-muted">Vor 2 Tagen</small></p>
+                      </div>
+                      </a>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <a class="buch" href="buch_detail_i.html">
+                      <div class="book-item">
+                      <h2>Ich habe auch gelebt!</h2>
+                      <p>Astrid Lindgren, Louise Hartung</p>
+                      <p><small class="text-muted">Vor 2 Tagen</small></p>
+                    </div>
+                    </a>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <div class="book-item">
+                      <h2>Und die Eselin sah den Engel</h2>
+                      <div class="autorbox">
+                      <p>Nick Cave</p>
+                      <p><small class="text-muted">Vor 2 Tagen</small></p>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <div class="book-item">
+                      <h2>Kitchen</h2>
+                      <div class="autorbox">
+                      <p>Yoshimoto Banana</p>
+                      <p><small class="text-muted">Vor 2 Tagen</small></p>
+                    </div>
+                    </div>
+                    </div>
+
+                  </div>
+                <!--end of flexbox-->
+
+
+
+
+              </div>
+
+              <!-- Meine Aufnahme-->
+              <div class="tab-pane fade" id="recording" role="tabpanel" aria-labelledby="recording-tab">
+
+                <!--flexbox-->
+
+
+                <div class="d-flex flex-wrap">
+
+                    <div class="w-25 p-3">
+                      <a class="buch" href="buch_detail_a.html">
+                      <div class="book-item">
+                      <h2>Arbeit und Struktur</h2></a>
+                      <p>Wolfgang Herrndorf</p>
+                      <p><small class="text-muted">Vor einer Minute</small></p>
+                      </div>
+                      </a>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <a class="buch" href="buch_detail_a_.html">
+                      <div class="book-item">
+                      <h2>Ansichten eines Clowns</h2>
+                      <p>Heinrich Böll</p>
+                      <p><small class="text-muted">Vor 3 Tagen</small></p>
+                    </div>
+                  </a>
+                    </div>
+
+                    <div class="w-25 p-3">
+                      <div class="book-item">
+                      <h2>Ein ganzes Leben</h2>
+                      <p>Robert Seethaler</p>
+                      <p><small class="text-muted">Vor einem Tag</small></p>
+                    </div>
+                    </div>
+
+                  </div>
+                <!--end of flexbox-->
+
+
+
+              </div>
+            </div>
+
+          </div><!--end tabs-->
+
+
+        </div>
+
+      </div>
+
+  </body>
