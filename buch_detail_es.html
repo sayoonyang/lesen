@@ -8,16 +8,14 @@
     <!--media viewport-->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <!--favicon-->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    <!--google material-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
 
     <!--jquery for Audioplayer-->
       <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
@@ -110,11 +108,11 @@
 
         <div class="row">
           <div class="col">
-            <h1 class="display-5 title">Ein ganzes Leben</h1>
+            <h1 class="display-5 title">Es ist besser so</h1>
 
             <div class="autorinfo">
             <h4>von</h4>
-            <h3>Robert Seethaler</h3>
+            <h3>Hans Bötticher</h3>
             </div>
           </div>
 
@@ -130,10 +128,10 @@
           <a class="author" href="#">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3 profile-photo" src="img/user_lily.png" width=13%>
+                <img class="mr-3 profile-photo" src="img/user_seokoh.png" width=13%>
                 <div class="media-body">
-                  <h5 class="mt-0 mb-0">Lilian Buchbuch</h5>
-                <small class="text-muted">Vor einem Tag</small>
+                  <h5 class="mt-0 mb-0">Seokoh Notizmann</h5>
+                <small class="text-muted">Vor 2 Tagen</small>
                 </div>
               </li>
             </ul>
@@ -141,16 +139,16 @@
           </div>
 
            <div class="audio-player">
-              <p audio_url="audio/einganzes.mp3"
+              <p audio_url="audio/esist.mp3"
               class="active list-group-item playlist-item">
               </p>
-              <div class="player-button">
-               <button type="button" id="play-button" class="btn-light btn-circle btn-xl play-pause">&nbsp;<i class="fa fa-play" aria-hidden="true"></i></button>
-              <!--  <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i> -->
-            <button type="button" id="pause-button" class="btn-info btn-circle btn-xl play-pause d-none"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                  <div class="player-button">
+                   <button type="button" id="play-button" class="btn-light btn-circle btn-xl play-pause">&nbsp;<i class="fa fa-play" aria-hidden="true"></i></button>
+                  <!--  <i id="play-button"class="material-icons play-pause mr-2" aria-hidden="true">play_circle_filled</i> -->
+                <button type="button" id="pause-button" class="btn-info btn-circle btn-xl play-pause d-none"><i class="fa fa-pause" aria-hidden="true"></i></button>
 
-                <!--<i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>-->
-              </div>
+                    <!--<i id="pause-button"class="material-icons play-pause d-none mr-2" aria-hidden="true">pause_circle_filled</i>-->
+                  </div>
 
             </div>
 
@@ -171,12 +169,12 @@
                   <div class="dropdown-sort">
                         <div class="dropdown show">
                           <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Alphabetisch
+                            Neueste Aufnahme
                           </a>
 
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Neueste Aufnahme</a>
                             <a class="dropdown-item" href="#">Älteste Aufnahme</a>
+                            <a class="dropdown-item" href="buch_detail_e_.html">Alphabetisch</a>
                           </div>
                         </div><!--dropdown show ends-->
                   </div><!--dropdown-sort ends-->
@@ -190,17 +188,19 @@
         <div class="d-flex flex-wrap">
 
           <div class="w-25 p-3">
+            <a href="buch_detail_e.html" class="buch">
             <div class="book-item">
-            <h2>Ein Geschenk für Rosa</h2>
+            <h2>Ein ganzes Leben</h2>
             <div class="autorbox">
-            <p>John Berger</p>
-            <p><small class="text-muted">Vor 4 Tagen</small></p>
+            <p>Robert Seethaler</p>
+            <p><small class="text-muted">Vor einem Tag</small></p>
           </div>
           </div>
+          </a>
           </div>
 
             <div class="w-25 p-3">
-              <a class="buch" href="buch_detail_e2_.html">
+              <a href="buch_detail_e2_.html" class="buch">
               <div class="book-item">
               <h2>Ein wenig <br> Leben</h2>
               <div class="autorbox">
@@ -211,11 +211,13 @@
             </a>
             </div>
 
+
+
             <div class="w-25 p-3">
               <div class="book-item">
-              <h2>Eine Frage der Zeit</h2>
+              <h2>Eine Tür aus Glas, weit offen</h2>
               <div class="autorbox">
-              <p>Alex Capus</p>
+              <p>Christoph Meckel</p>
               <p><small class="text-muted">Vor 3 Tagen</small></p>
             </div>
             </div>
@@ -223,9 +225,9 @@
 
             <div class="w-25 p-3">
               <div class="book-item">
-              <h2>Eine Tür aus Glas, weit offen</h2>
+              <h2>Eine Frage der Zeit</h2>
               <div class="autorbox">
-              <p>Christoph Meckel</p>
+              <p>Alex Capus</p>
               <p><small class="text-muted">Vor 3 Tagen</small></p>
             </div>
             </div>
@@ -241,7 +243,15 @@
             </div>
             </div>
 
-
+            <div class="w-25 p-3">
+              <div class="book-item">
+              <h2>Ein Geschenk für Rosa</h2>
+              <div class="autorbox">
+              <p>John Berger</p>
+              <p><small class="text-muted">Vor 4 Tagen</small></p>
+            </div>
+            </div>
+            </div>
 
             <div class="w-25 p-3">
               <div class="book-item">
@@ -252,22 +262,6 @@
             </div>
             </div>
             </div>
-
-
-            <div class="w-25 p-3">
-              <a href="buch_detail_es.html" class="buch">
-              <div class="book-item">
-              <h2>Es ist besser <br>so</h2>
-              <div class="autorbox">
-              <p>Hans Bötticher</p>
-              <p><small class="text-muted">Vor 2 Tagen</small></p>
-            </div>
-            </div>
-            </a>
-            </div>
-
-
-
 
           </div>
         <!--end of flexbox-->
