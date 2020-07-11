@@ -809,7 +809,6 @@ li.active:before {
     display : none;
   }
 
-
 }
 
 /*smaller view*/
@@ -846,8 +845,8 @@ li.active:before {
     display : none;
   }
 
-  .card-container, .card-group-sm {
-    display: none !important;
+  .card-container, .card-group.sm {
+    display: none;
   }
 
   .connection{
