@@ -727,7 +727,6 @@ li.active:before {
 
 
 
-
 /*middle view*/
 
 .card-group.md, .card-group.sm{
@@ -756,7 +755,7 @@ li.active:before {
 
 @media only screen and (max-width: 1163px) {
   .dialogbox-bookmark, .dialogbox-bookmark-already{
-    width : 50%;
+    width : 70%;
   }
 
 
@@ -792,6 +791,7 @@ li.active:before {
 
   .audio-cover-md{
     display : block;
+    text-align : center;
   }
 
   .books-container{
@@ -827,10 +827,26 @@ li.active:before {
   .title-sm{
     display : block;
   }
+
+
+
+  .dialogbox-bookmark, .dialogbox-bookmark-already{
+    width : 80%;
+  }
+
+
+  .audio-cover-md{
+      width : 100%;
+      text-align : center;
+    }
+
+
+
 }
 
 
 /* mini*/
+
 
 .card-group-mini{
   display : none;
@@ -852,6 +868,13 @@ li.active:before {
     margin : -11rem auto auto -3rem ;
   }
 
+  .dialogbox-bookmark, .dialogbox-bookmark-already{
+    width : 90%;
+  }
+
+  .pagination-left, .pagination-right{
+    display : none;
+  }
 
 
 }
@@ -893,8 +916,5 @@ li.active:before {
     display : none;
   }
 
-  .pagination-left, .pagination-right{
-    display : none;
-  }
 
 }
