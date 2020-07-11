@@ -845,7 +845,12 @@ li.active:before {
 }
 
 
-/* Mobile (unavailable) */
+/* mini*/
+
+.card-group-mini{
+  display : none;
+}
+
 @media only screen and (max-width: 830px) {
 
 
@@ -854,6 +859,26 @@ li.active:before {
   }
 
   .card-container, .card-group.sm {
+    display: none;
+  }
+
+  .card-group-mini{
+    display : flex;
+    margin : -11rem auto auto -3rem ;
+  }
+
+
+}
+
+/* Mobile (unavailable) */
+@media only screen and (max-width: 550px) {
+
+
+  .navbar-light .navbar-toggler-icon {
+    display : none;
+  }
+
+  .card-container, .card-group.sm, .card-group-mini {
     display: none;
   }
 
