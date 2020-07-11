@@ -885,6 +885,10 @@ li.active:before {
     display : none;
   }
 
+  .postprocess{
+    display : none;
+  }
+
 
 }
 
@@ -923,6 +927,14 @@ li.active:before {
 
   .books-container{
     display : none;
+  }
+
+  .container{
+    display : none;
+  }
+
+  .register-bg, .login-bg{
+    background-image : none;
   }
 
 
