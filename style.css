@@ -727,6 +727,10 @@ li.active:before {
 }
 
 
+.audio-cover-md{
+  display : none;
+}
+
 @media only screen and (max-width: 1310px) {
   .card-group.main{
     display : none;
@@ -737,8 +741,76 @@ li.active:before {
     margin-bottom : -5.5em;
   }
 
+
+
+
 }
 
+@media only screen and (max-width: 1163px) {
+  .dialogbox-bookmark, .dialogbox-bookmark-already{
+    width : 50%;
+  }
+
+
+  .row.buchdetail{
+    display : block;
+  }
+
+  .col.right{
+    border : none;
+  }
+
+  .autorinfo{
+    position : relative;
+  }
+
+
+
+  .audio-player{
+    text-align : center;
+    margin-left : 2rem;
+    top : 6rem;
+  }
+
+  .audio-author{
+    display : block;
+  }
+
+  .audio-progress{
+    display : none;
+  }
+
+  .audio-cover{
+    display : none;
+  }
+
+  .audio-cover-md{
+    display : block;
+  }
+
+  .books-container{
+    display : none;
+  }
+
+  .dropdown-sort{
+    display : none;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .dialogbox-bookmark, .dialogbox-bookmark-already{
+    display : none;
+  }
+
+  .books-container{
+    display : none;
+  }
+
+  .pagination-left, .pagination-right{
+    display : none;
+  }
+}
 
 /*smaller view*/
 
