@@ -804,21 +804,6 @@ li.active:before {
 
 }
 
-@media only screen and (max-width: 992px) {
-  .dialogbox-bookmark, .dialogbox-bookmark-already{
-    display : none;
-  }
-
-  .books-container{
-    display : none;
-  }
-
-  .pagination-left, .pagination-right{
-    display : none;
-  }
-
-}
-
 /*smaller view*/
 
 .title-sm{
@@ -868,6 +853,7 @@ li.active:before {
   }
 
 
+
 }
 
 /* Mobile (unavailable) */
@@ -899,5 +885,16 @@ li.active:before {
     display : none;
   }
 
+  .dialogbox-bookmark, .dialogbox-bookmark-already{
+    display : none;
+  }
+
+  .books-container{
+    display : none;
+  }
+
+  .pagination-left, .pagination-right{
+    display : none;
+  }
 
 }
