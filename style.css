@@ -738,6 +738,10 @@ li.active:before {
   display : none;
 }
 
+.meinbookmark50{
+  display : none;
+}
+
 @media only screen and (max-width: 1310px) {
   .card-group.main{
     display : none;
@@ -748,8 +752,13 @@ li.active:before {
     margin-bottom : -5.5em;
   }
 
+  .meinbookmark{
+    display : none;
+  }
 
-
+  .meinbookmark50{
+    display : block;
+  }
 
 }
 
