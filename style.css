@@ -742,6 +742,9 @@ li.active:before {
 
 /*smaller view*/
 
+.title-sm{
+  display:none;
+}
 
 @media only screen and (max-width: 980px) {
   .card-group.md{
@@ -753,6 +756,13 @@ li.active:before {
     margin-bottom : -7em;
   }
 
+  .display-4{
+    display: none;
+  }
+
+  .title-sm{
+    display : block;
+  }
 }
 
 
