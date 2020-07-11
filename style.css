@@ -346,7 +346,7 @@ a.author:hover{
 
 
 .login-bg{
-  background-image : url("img/alphabet/illu-12.gif");
+  background-image : url("img/alphabet/bg-illu-12.gif");
   background-position : center;
   background-repeat : no-repeat;
   height : 50rem;
@@ -355,7 +355,7 @@ a.author:hover{
 }
 
 .register-bg{
-  background-image : url("img/alphabet/illu-20.gif");
+  background-image : url("img/alphabet/bg-illu-20.gif");
   background-position : center;
   background-repeat : no-repeat;
   height : 40rem;
