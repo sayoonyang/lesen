@@ -113,6 +113,7 @@ a.buch:hover{
   margin-bottom : -5em;
 }
 
+
 .connection{
   display : none;
 }
@@ -716,19 +717,56 @@ li.active:before {
 
 
 
-@media only screen and (max-width: 641px) {
-  body {
 
+
+
+/*middle view*/
+
+.card-group.md, .card-group.sm{
+  display : none;
+}
+
+
+@media only screen and (max-width: 1310px) {
+  .card-group.main{
+    display : none;
   }
+
+  .card-group.md{
+    display :flex;
+    margin-bottom : -5.5em;
+  }
+
+}
+
+
+/*smaller view*/
+
+
+@media only screen and (max-width: 980px) {
+  .card-group.md{
+    display : none;
+  }
+
+  .card-group.sm{
+    display : flex;
+    margin-bottom : -7em;
+  }
+
+}
+
+
+/* Mobile (unavailable) */
+@media only screen and (max-width: 830px) {
+
 
   .navbar-light .navbar-toggler-icon {
     display : none;
   }
 
-  .card-container {
-    display: none;
+  .card-container, .card-group-sm {
+    display: none !important;
   }
-
 
   .connection{
     display : block;
