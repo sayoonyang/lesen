@@ -522,9 +522,9 @@ a.register:hover{
 }
 
 .books-container{
-  width : 80%;
-  padding-top : 5em;
-  margin : auto;
+  display: grid;
+  margin-top : 0.5rem;
+
 }
 
 
@@ -665,10 +665,11 @@ a.register:hover{
 
 .dropdown-sort{
 
-  position : absolute;
-  right : 0px;
-  margin-right : 11.5rem;
-  margin-top : 1.5rem;
+  float : right;
+  margin-left : auto;
+  padding-right : 1rem;
+  padding-top : 1rem;
+
 }
 
 .dropdown-menu.dropdown-menu-right{
